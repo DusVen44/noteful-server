@@ -33,8 +33,6 @@ notesRouter
                 return res.status(400).json({
                     error: { message: `Missing '${key}' in request body` }
                 })
-        
-        newNote.date_modified = date_modified;
 
         NotesService.addNote(
             req.app.get('db'),
