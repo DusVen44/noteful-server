@@ -5,7 +5,7 @@ const { PORT, DATABASE_URL } = require('./config');
 
 const db = knex({
   client: 'pg',
-  connection: DATABASE_URL,
+  connection: 'postgres://pudnxuhliwotci:cb6506ba184c0ac76031640e7d5bc4220ed59e1e0b2b9ab151e2aacec4d3a660@ec2-107-22-7-9.compute-1.amazonaws.com:5432/de458fm765arg0',
 })
 
 app.set('db', db);
